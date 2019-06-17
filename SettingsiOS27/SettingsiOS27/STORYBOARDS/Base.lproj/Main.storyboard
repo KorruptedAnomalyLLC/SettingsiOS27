@@ -42,6 +42,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dms-DP-dNk">
                                                     <rect key="frame" x="193" y="0.0" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="settingCellToggled:" destination="n3d-p3-Ad4" eventType="valueChanged" id="Vm3-gM-IAq"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </stackView>

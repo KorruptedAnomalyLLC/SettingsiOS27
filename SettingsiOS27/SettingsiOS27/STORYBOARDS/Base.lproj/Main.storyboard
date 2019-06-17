@@ -13,12 +13,12 @@
         <scene sceneID="RxH-mg-uNy">
             <objects>
                 <tableViewController id="Wch-I4-hB4" customClass="SettingListTableViewController" customModule="SettingsiOS27" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bOr-q1-Vmn">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bOr-q1-Vmn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingCell" rowHeight="146" id="n3d-p3-Ad4">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingCell" rowHeight="146" id="n3d-p3-Ad4" customClass="SettingTableViewCell" customModule="SettingsiOS27" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="146"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n3d-p3-Ad4" id="DCA-FF-7bA">
@@ -54,10 +54,15 @@
                                         <constraint firstItem="gFd-PD-Kh3" firstAttribute="leading" secondItem="Rdn-ny-bVv" secondAttribute="trailing" constant="8" id="c5U-Cr-TxS"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="1" green="0.3736549139" blue="0.047485314610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="gFd-PD-Kh3" firstAttribute="centerY" secondItem="n3d-p3-Ad4" secondAttribute="centerY" id="Y4I-5Z-E5s"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="settingIconImageView" destination="Rdn-ny-bVv" id="z9V-DJ-0DR"/>
+                                    <outlet property="settingNameLabel" destination="e4i-cm-N68" id="OeU-AI-oTC"/>
+                                    <outlet property="settingSwitch" destination="dms-DP-dNk" id="gjI-nc-Bs2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

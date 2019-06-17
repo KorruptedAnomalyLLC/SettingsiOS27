@@ -6,4 +6,17 @@
 //  Copyright © 2019 Austin West. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class Setting {
+    
+    let name: String
+    let icon: UIImage
+    var isOn: Bool
+    
+    init(name: String, icon: UIImage, isOn: Bool) {
+        self.name = name
+        self.icon = icon
+        self.isOn = isOn
+    }
+}
